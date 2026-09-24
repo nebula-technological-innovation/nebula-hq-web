@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Atlas — Nebula</title>
+  <meta name="description" content="Atlas night book for Nebula jobs, marks, and local proof.">
+  <meta name="theme-color" content="#100e0b">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/app.css">
+</head>
+<body class="app-body">
+  <a class="skip" href="#main">Skip to main</a>
+  <div class="app-shell">
+    <aside class="side">
+      <a class="mark" href="../">Nebula</a>
+      <nav aria-label="App">
+        <a href="#/" data-nav="today">Tonight</a>
+        <a href="#/jobs" data-nav="jobs">Jobs</a>
+        <a href="#/settings" data-nav="settings">Settings</a>
+        <a href="../play/">Draco</a>
+      </nav>
+    </aside>
+    <main id="main" class="workspace"></main>
+  </div>
+  <script type="module" src="../scripts/app.js"></script>
+</body>
+</html>

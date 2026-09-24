@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Draco — Nebula</title>
+  <meta name="description" content="Draco bearing drill. Hold north, take three beacons.">
+  <meta name="theme-color" content="#0c0b09">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Mono:wght@400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/game.css">
+</head>
+<body class="game-body">
+  <div class="game-wrap">
+    <div class="game-top">
+      <a href="../">Nebula</a>
+      <span class="help">Space / tap to correct · P to pause</span>
+    </div>
+    <div class="stage">
+      <canvas id="game" width="960" height="540" aria-label="Bearing drill"></canvas>
+      <div id="overlay" class="overlay">
+        <h1 id="overlay-title">Draco</h1>
+        <p id="overlay-msg">Hold north while drift pulls. Keep error tight long enough to take three beacons. Space or tap corrects. Arrows trim.</p>
+        <button class="btn" id="start" type="button">Begin drill</button>
+      </div>
+    </div>
+    <div class="hud">
+      <div>Score <b id="score">0</b></div>
+      <div>Best <b id="best">0</b></div>
+      <div>Beacons <b id="beacons">0/3</b></div>
+      <div>Error <b id="err">0.0°</b></div>
+      <button class="btn" id="pause" type="button">Pause</button>
+    </div>
+  </div>
+  <script type="module" src="../scripts/game.js"></script>
+</body>
+</html>
