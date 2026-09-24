@@ -1,2 +1,5 @@
-# nebula-hq-web
-Public deploy mirror of the Nebula site, Atlas, and Draco suite
+# Nebula web
+
+Public site, Atlas ops book, and Draco drill for Nebula Technological Innovation (Roe Acquisitions LLC).
+
+Source of record also lives at nebula-technological-innovation/nebula-web.
