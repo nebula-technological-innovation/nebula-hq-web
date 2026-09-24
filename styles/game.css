@@ -1,0 +1,14 @@
+.game-body { min-height: 100vh; background: #0c0b09; }
+.game-wrap { width: min(960px, 100%); margin: 0 auto; padding: 1rem 0.75rem 2rem; }
+.game-top { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 0.7rem; }
+.game-top a { color: var(--ink); text-decoration: none; font-family: var(--font-display); }
+.stage { position: relative; }
+canvas { display: block; width: 100%; height: auto; background: #16120c; border: 1px solid var(--line); touch-action: none; }
+.hud { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.8rem; padding: 0.7rem 0; font-variant-numeric: tabular-nums; }
+.hud b { font-family: var(--font-display); font-size: 1.3rem; }
+.overlay { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 0.7rem; text-align: center; background: color-mix(in oklab, #0c0b09 72%, transparent); padding: 1rem; }
+.overlay p { max-width: 36ch; color: var(--muted); margin: 0; }
+.overlay[hidden] { display: none; }
+.overlay h1 { font-size: var(--step-3); }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 1rem; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink); font: inherit; font-weight: 600; border-radius: 5px; cursor: pointer; }
+.help { color: var(--muted); font-size: 0.92rem; }
