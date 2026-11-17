@@ -1,0 +1,16 @@
+name: Public ARM64 Actions Diagnostic
+on:
+  push:
+    branches:
+      - ci/actions-arm64-probe-20261117
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 3
+    steps:
+      - name: Verify hosted runner started
+        run: |
+          echo "arm64-runner-started"
+          uname -m
